@@ -1,0 +1,94 @@
+@font-face {
+  font-family: Audiowide;
+  src: url("https://fonts.googleapis.com/css?family=Audiowide");
+}
+
+
+
+div {
+  border-radius: 10px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: grey;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+div#buttons {
+  background-color: #91dce5;
+  border-style: none;
+  text-align: center;
+}
+#userDices {
+  text-align: center;
+}
+
+.userDices {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  height: auto;
+  font-size: larger;
+  border-radius: 5px;
+  background-color: yellowgreen;
+  font-family: Audiowide;
+}
+
+button:hover {
+  background-color: #f0afaf;
+}
+
+#cpuDice {
+  text-align: center;
+}
+
+.cpuDice {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: #91dce5;
+  font-family: Audiowide;
+}
+
+img {
+  height: 200px;
+  width: auto;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 300px) {
+  button {
+    width: 100px;
+  }
+  img {
+    height: 75px;
+    width: auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1281px) {
+  button {
+    width: 200px;
+  }
+  img {
+    height: 200px;
+    width: auto;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=dice-game.css.map */

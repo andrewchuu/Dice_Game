@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/dice-game.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="./scripts/dice_game.js" defer></script>
+    <title>COMP 2132 - Dice Game By Andrew Chu</title>
+</head> 
+<body>
+    <div id="userDices">
+        <h2 id="userScore">User Score:</h2>
+        <h3 id="userRound">Round Score:</h3>
+        <img id="die1" class="userDices" src="./images/1-dice.png" alt="die1">
+        <img id="die2" class="userDices" src="./images/1-dice.png" alt="die2">
+    </div>
+    <div id="cpuDice">
+        <h2 id="cpuScore">CPU Score:</h2>
+        <h3 id="cpuRound">Round Score:</h3>
+        <img id="cpuDie1" class="cpuDice" src="./images/1-dice.png" alt="cpuDie1">
+        <img id="cpuDie2" class="cpuDice" src="./images/1-dice.png" alt="cpuDie2">
+    </div>
+    <div id="buttons" class="flex centered">
+        <button id="roll">Roll!</button>
+        <button id="newGame">New Game</button>
+    </div>
+    <h1 id="Result"></h1>
+</body>
+</html>

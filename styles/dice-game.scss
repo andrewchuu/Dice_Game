@@ -1,0 +1,102 @@
+$audiowide_url: 'https://fonts.googleapis.com/css?family=Audiowide';
+@font-face {
+    font-family: Audiowide;
+    src: url($audiowide_url);
+}
+
+$background_color: rgb(145, 220, 229);
+body { 
+    background-color:$background_color;
+    font-family: Audiowide;
+}
+
+@mixin diceImg($height) {
+    height: $height;
+    width: auto;
+}
+
+img {
+    @include diceImg(200px);
+    text-align: center;
+}
+
+#userDices {
+    text-align: center;
+  }
+  
+.userDices {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cpuDice {
+  text-align: center;
+}
+
+.cpuDice {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+    height: auto;
+    
+    font-size: larger;
+    border-radius: 5px;
+    background-color: yellowgreen;
+    font-family: Audiowide;
+}
+$button-hover-color:rgb(240, 175, 175);
+button:hover {
+    background-color: $button-hover-color;
+}
+
+$div_border_color: grey;
+$dice_div_width: 50%;
+div {
+    border-radius: 10px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: $div_border_color;
+    margin-bottom: 10px;
+    width: $dice_div_width; 
+}
+
+div#buttons {
+    background-color: $background_color;
+    border-style: none;
+    text-align: center;
+}
+
+h1,h2,h3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (min-width:300px) { 
+    button {
+        width: 100px;
+    }
+    
+    img {
+        @include diceImg(75px);
+        text-align: center;
+    }
+}
+
+@media (min-width:1281px) {
+    button {
+        width: 200px;
+    }
+
+    img {
+        @include diceImg(200px);
+        text-align: center;
+    }
+}
